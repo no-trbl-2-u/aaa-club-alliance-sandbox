@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 
 function Home() {
+  useEffect(() => {
+    document.title = 'ACA Sandbox';
+  }, []);
+
   return (
     <div className="home-container">
       <header>
@@ -11,10 +15,10 @@ function Home() {
       <h2>Testing anchor tags</h2>
       <ul className="home-links">
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about">About -- Link with Title Change</Link>
         </li>
         <li>
-          <Link to="/link-2">Link Two</Link>
+          <Link to="/another">Another -- Link without Title Change</Link>
         </li>
         <li>
           <Link to="/link-3">Link Three</Link>
