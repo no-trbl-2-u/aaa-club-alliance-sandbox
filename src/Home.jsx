@@ -20,9 +20,6 @@ function Home() {
         <li>
           <Link to="/another">Another -- Link without Title Change</Link>
         </li>
-        <li>
-          <Link to="/link-3">Link Three</Link>
-        </li>
       </ul>
     </div>
   );
